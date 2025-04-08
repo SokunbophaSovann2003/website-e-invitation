@@ -1,15 +1,42 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
-<template>
-  <div>
-    <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<!-- <template>
+  <div class="bg-gray-100 font-sans min-h-screen">
+    <AppHeader />
+    
+    <main class="pt-16">
+      <HeroSection />
+      <FeaturedProjects />
+      <ServicesSection />
+    </main>
+    
+    <AppFooter />
   </div>
 </template>
 
-<style scoped>
+<script>
+import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue'
+import HeroSection from './components/HeroSection.vue'
+import FeaturedProjects from './components/FeaturedProjects.vue'
+import ServicesSection from './components/ServicesSection.vue'
 
-</style>
+export default {
+  name: 'App',
+  components: {
+    AppHeader,
+    AppFooter,
+    HeroSection,
+    FeaturedProjects,
+    ServicesSection
+  }
+}
+</script> -->
+
+<template>
+  <router-view/>
+</template>
+
+<script>
+export default {
+  name: 'App'
+}
+</script>
