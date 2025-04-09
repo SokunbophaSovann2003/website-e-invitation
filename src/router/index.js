@@ -1,28 +1,90 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Portfolio from '../views/Portfolio.vue'  // Make sure this exists
-import ProjectDetail from '../views/ProjectDetail.vue'  // Make sure this exists
+import Home from '../views/Home.vue'
+import { useAuthStore } from '../stores/auth'
 
 const routes = [
   {
     path: '/',
-    redirect: '/portfolio'  // Redirect root to portfolio
+    name: 'Home',
+    component: Home
   },
   {
-    path: '/portfolio',
-    name: 'Portfolio',
-    component: Portfolio
+    path: '/designs',
+    name: 'Designs',
+    component: () => import('../views/Designs.vue')
   },
   {
-    path: '/projects/:id',
-    name: 'ProjectDetail',
-    component: ProjectDetail,
+    path: '/designs/:id',
+    name: 'DesignDetail',
+    component: () => import('../views/DesignDetail.vue'),
     props: true
+  },
+  {
+    path: '/create',
+    name: 'Create',
+    component: () => import('../views/Create.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/cart',
+    name: 'Cart',
+    component: () => import('../views/Cart.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/my-designs',
+    name: 'MyDesigns',
+    component: () => import('../views/MyDesign.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/my-account',
+    name: 'MyAccount',
+    component: () => import('../views/MyAccount.vue'),
+    meta: { requiresAuth: true }
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: () => import('../views/About.vue')
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('../views/Contact.vue')
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Login.vue'),
+    meta: { requiresGuest: true }
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import('../views/Register.vue'),
+    meta: { requiresGuest: true }
   }
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return savedPosition || { top: 0 }
+  }
+})
+
+router.beforeEach((to, from, next) => {
+  const authStore = useAuthStore()
+  
+  if (to.meta.requiresAuth && !authStore.isAuthenticated) {
+    next({ name: 'Login', query: { redirect: to.fullPath } })
+  } else if (to.meta.requiresGuest && authStore.isAuthenticated) {
+    next({ name: 'Home' })
+  } else {
+    next()
+  }
 })
 
 export default router
