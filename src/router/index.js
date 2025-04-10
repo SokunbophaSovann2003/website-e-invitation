@@ -64,6 +64,16 @@ const routes = [
     name: 'Register',
     component: () => import('../views/Register.vue'),
     meta: { requiresGuest: true }
+  },
+  {
+    path: '/privacy-policy',
+    name: 'PrivacyPolicy',
+    component: () => import('../views/PrivacyPolicy.vue')
+  },
+  {
+    path: '/terms-conditions',
+    name: 'TermsConditions',
+    component: () => import('../views/TermsConditions.vue')
   }
 ]
 

@@ -72,7 +72,7 @@
               <input id="terms" v-model="terms" name="terms" type="checkbox"
                 class="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded">
               <label for="terms" class="ml-2 block text-sm text-gray-900">
-                I agree to the <a href="#" class="text-teal-600 hover:text-teal-500">Terms and Conditions</a>
+                I agree to the <router-link to="/terms-conditions" href="#" class="text-teal-600 hover:text-teal-500">Terms and Conditions</router-link>
               </label>
             </div>
   
