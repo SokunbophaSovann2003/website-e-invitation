@@ -31,7 +31,7 @@
           <div class="flex">
             <p class="mr-1 text-gray-800">Email:</p>
             <a href="mailto:info@inviteme.com" aria-label="Our email" title="Our email"
-              class="transition-colors duration-300 text-teal-600 hover:text-teal-800">info@inviteme.com</a>
+              class="transition-colors duration-300 text-teal-600 hover:text-teal-800">sokunbophasovann@gmail.com</a>
           </div>
           <div class="flex">
             <p class="mr-1 text-gray-800">Address:</p>

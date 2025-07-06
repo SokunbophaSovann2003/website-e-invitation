@@ -29,7 +29,7 @@
           >
             <router-link :to="`/designs/${design.id}`">
               <div class="relative">
-                <img :src="design.image" :alt="design.title" class="w-full h-64 object-cover">
+                <img :src="design.image" :alt="design.title" class="w-full h-90 object-cover">
                 <span class="absolute top-2 right-2 bg-white px-2 py-1 rounded-full text-xs font-semibold">
                   {{ design.category }}
                 </span>
@@ -76,7 +76,7 @@
             price: '29.99',
             originalPrice: '39.99',
             description: 'Classic design with delicate floral accents',
-            image: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://i.pinimg.com/736x/21/1c/a2/211ca21a693f0595ff6513eaa04ea0e9.jpg'
           },
           {
             id: 2,
@@ -84,7 +84,7 @@
             category: 'Birthday',
             price: '19.99',
             description: 'Colorful and playful design for all ages',
-            image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://i.pinimg.com/736x/b9/fc/fc/b9fcfc559c8763eb7d9ef07785e90d5a.jpg'
           },
           {
             id: 3,
@@ -92,7 +92,7 @@
             category: 'Corporate',
             price: '24.99',
             description: 'Clean, modern design for business occasions',
-            image: 'https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://i.pinimg.com/736x/8f/ee/cb/8feecb813199116d3f1c5273c4dcad64.jpg'
           },
           {
             id: 4,
@@ -100,7 +100,7 @@
             category: 'Wedding',
             price: '34.99',
             description: 'Natural textures and earthy tones',
-            image: 'https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://i.pinimg.com/736x/d8/e2/6f/d8e26fd0340ac98a6ad9afa14a4a9f98.jpg'
           },
           {
             id: 5,
@@ -109,7 +109,7 @@
             price: '22.99',
             originalPrice: '29.99',
             description: 'Sweet and adorable baby-themed design',
-            image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://images.greetingsisland.com/images/invitations/baby/previews/princess-gold-castle-&-roses-19113.jpeg?auto=format,compress&w=932'
           },
           {
             id: 6,
@@ -117,7 +117,7 @@
             category: 'Graduation',
             price: '21.99',
             description: 'Elegant design to celebrate academic achievements',
-            image: 'https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://images.greetingsisland.com/images/cards/thank-you/graduation-thank%20you/previews/gold-star-confetti-32662.jpeg?auto=format,compress&w=932'
           },
           {
             id: 7,
@@ -125,7 +125,7 @@
             category: 'Wedding',
             price: '27.99',
             description: 'Simple yet sophisticated design',
-            image: 'https://images.unsplash.com/photo-1523438885200-e635ba2c371e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://i.pinimg.com/736x/66/12/7f/66127f07bff9786700f2af3c27e71376.jpg'
           },
           {
             id: 8,
@@ -133,7 +133,35 @@
             category: 'Birthday',
             price: '18.99',
             description: 'Fun and colorful design perfect for kids',
-            image: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://images.greetingsisland.com/images/invitations/birthday/previews/magical-butterflies-photo-18112.gif?auto=format,compress&w=932'
+          },
+                    {
+            id: 9,
+            title: 'Elegant Floral Wedding',
+            category: 'Wedding',
+            price: '29.99',
+            image: 'https://i.pinimg.com/736x/ec/dc/cc/ecdccc7d12cbfe2c236a94dd5b44446e.jpg'
+          },
+          {
+            id: 10,
+            title: 'Modern Birthday Party',
+            category: 'Birthday',
+            price: '19.99',
+            image: 'https://i.pinimg.com/736x/b9/fc/fc/b9fcfc559c8763eb7d9ef07785e90d5a.jpg'
+          },
+          {
+            id: 11,
+            title: 'Professional Corporate Event',
+            category: 'Corporate',
+            price: '24.99',
+            image: 'https://i.pinimg.com/736x/d6/fe/03/d6fe03e0f820865dc2a28d8a2aca4421.jpg'
+          },
+          {
+            id: 12,
+            title: 'Professional Corporate Event',
+            category: 'Graduation',
+            price: '24.99',
+            image: 'https://i.pinimg.com/736x/85/38/6b/85386b1e6b0bcefb9eaba6f60ec7bcf2.jpg'
           }
         ]
       }

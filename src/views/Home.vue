@@ -87,10 +87,10 @@
             </p>
           </div>
           
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div v-for="(design, index) in popularDesigns" :key="index" class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
               <div class="relative">
-                <img :src="design.image" :alt="design.title" class="w-full h-64 object-cover">
+                <img :src="design.image" :alt="design.title" class="w-full h-90 object-cover">
                 <span class="absolute top-2 right-2 bg-white px-2 py-1 rounded-full text-xs font-semibold">
                   {{ design.category }}
                 </span>
@@ -178,25 +178,32 @@
       return {
         popularDesigns: [
           {
-            id: 1,
+            id: 9,
             title: 'Elegant Floral Wedding',
             category: 'Wedding',
             price: '29.99',
-            image: 'https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://i.pinimg.com/736x/ec/dc/cc/ecdccc7d12cbfe2c236a94dd5b44446e.jpg'
           },
           {
-            id: 2,
+            id: 10,
             title: 'Modern Birthday Party',
             category: 'Birthday',
             price: '19.99',
-            image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://i.pinimg.com/736x/b9/fc/fc/b9fcfc559c8763eb7d9ef07785e90d5a.jpg'
           },
           {
-            id: 3,
+            id: 11,
             title: 'Professional Corporate Event',
             category: 'Corporate',
             price: '24.99',
-            image: 'https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
+            image: 'https://i.pinimg.com/736x/d6/fe/03/d6fe03e0f820865dc2a28d8a2aca4421.jpg'
+          },
+          {
+            id: 12,
+            title: 'Professional Corporate Event',
+            category: 'Graduation',
+            price: '24.99',
+            image: 'https://i.pinimg.com/736x/85/38/6b/85386b1e6b0bcefb9eaba6f60ec7bcf2.jpg'
           }
         ],
         testimonials: [
