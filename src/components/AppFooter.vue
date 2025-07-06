@@ -23,11 +23,11 @@
         </div>
         <div class="space-y-2 text-sm">
           <p class="text-base font-bold tracking-wide text-gray-900">Contacts</p>
-          <div class="flex">
+          <!-- <div class="flex">
             <p class="mr-1 text-gray-800">Phone:</p>
             <a href="tel:123-456-7890" aria-label="Our phone" title="Our phone"
               class="transition-colors duration-300 text-teal-600 hover:text-teal-800">123-456-7890</a>
-          </div>
+          </div> -->
           <div class="flex">
             <p class="mr-1 text-gray-800">Email:</p>
             <a href="mailto:info@inviteme.com" aria-label="Our email" title="Our email"
@@ -38,7 +38,7 @@
             <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address"
               title="Our address"
               class="transition-colors duration-300 text-teal-600 hover:text-teal-800">
-              123 Invitation St, Design City
+              Phnom Penh City, Cambodia
             </a>
           </div>
         </div>
@@ -77,10 +77,13 @@
         <p class="text-sm text-gray-600">
           © Copyright 2023 InviteMe. All rights reserved.
         </p>
+        <p class="text-sm text-gray-600">
+          Ownership by: <b>Sokunbopha Sovann</b>
+        </p>
         <ul class="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-          <li>
+          <!-- <li>
             <router-link to="/faq" class="text-sm text-gray-600 transition-colors duration-300 hover:text-teal-600">F.A.Q</router-link>
-          </li>
+          </li> -->
           <li>
             <router-link to="/privacy-policy" class="text-sm text-gray-600 transition-colors duration-300 hover:text-teal-600">Privacy Policy</router-link>
           </li>

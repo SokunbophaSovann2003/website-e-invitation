@@ -69,17 +69,25 @@
           </div>
         </div>
         
-        <div class="mb-16">
+        <div class="mb-16 justify-items-center">
           <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Meet the Team</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div v-for="member in team" :key="member.name" class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8 w-72">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+              <img src="../assets/img/sokunbopha1.png" class="w-full h-84 object-cover">
+              <div class="p-6">
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">Sokunbopha Sovann</h3>
+                <p class="text-teal-600 mb-3">Project Leader</p>
+                <p class="text-gray-600 text-sm">I am the founder and creator behind the E-Invitation project, combining original ideas with over 3 years of design and development experience to build a modern, user-friendly solution from the ground up.</p>
+              </div>
+            </div>
+            <!-- <div v-for="member in team" :key="member.name" class="bg-white rounded-lg shadow-md overflow-hidden text-center">
               <img :src="member.image" :alt="member.name" class="w-full h-64 object-cover">
               <div class="p-6">
                 <h3 class="text-xl font-semibold text-gray-800 mb-1">{{ member.name }}</h3>
                 <p class="text-teal-600 mb-3">{{ member.role }}</p>
                 <p class="text-gray-600 text-sm">{{ member.bio }}</p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         
@@ -105,12 +113,6 @@
   export default {
     setup() {
       const team = ref([
-        {
-          name: 'Sarah Johnson',
-          role: 'Founder & CEO',
-          bio: 'Sarah started InviteMe after struggling to find affordable, beautiful invitations for her wedding.',
-          image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'
-        },
         {
           name: 'Michael Chen',
           role: 'Lead Designer',
